@@ -11,14 +11,14 @@ pygame.init()
 done=False
 def nextSong():
     global _songs
-    _songs = _songs[1:] + [_songs[0]] # move current song to the back of the list
+    _songs = _songs[1:] + [_songs[0]]
     pygame.mixer.music.load(_songs[0])
 
 def prevSong():
     global _songs
     print(_songs[-1])
     print([_songs[0:-1]])
-    _songs = [_songs[-1]] + _songs[0:-1] # move current song to the back of the list
+    _songs = [_songs[-1]] + _songs[0:-1]
     pygame.mixer.music.load(_songs[0])
 
 
