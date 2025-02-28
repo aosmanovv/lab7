@@ -57,7 +57,7 @@ while not done:
     #screen.blit(ar2,(350,140))
     angle1=-(datetime.datetime.now().hour%12*30-90)
     angle2=-(datetime.datetime.now().minute%60*6-90)
-    print(angle2)
+    #print(angle2)
     blitRotate(screen,ar1,(400,300),(30,85),angle1)
     blitRotate(screen,ar2,(400,300),(30,105),angle2)
     pygame.display.flip()
